@@ -23,6 +23,9 @@
     text-decoration: none;
     font-weight: 700;
 }
+header .logo i{
+    font-size: 1.5rem;
+}
 .header .navbar a{
     font-size: 1.1rem;
     color: #ffffff;
@@ -152,6 +155,71 @@
     transform: translateY(100%);
     opacity: 1;
 }
+.view-bottom{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.share{
+    position: absolute;
+    bottom: 30px;
+    z-index: 10;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+    color: #f8f4f4;
+}
+
+.share span::before{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: #f8f4f4;
+    font-size: 12px;
+    transform: rotate(180deg);
+}
+.share .text{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transform: rotate(270deg);
+    margin-bottom: 30px;
+    width: 50px;
+}
+.share i {
+    font-size: 25px;
+    margin: 25px 0;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.bottom-center{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 30px;
+    z-index: 100;
+    display: flex;
+    width: auto;
+    color: #f8f4f4;
+}
+.bottom-center span{
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+}
+
 
 .line{
     position: absolute;
@@ -169,7 +237,7 @@
     right: 60px;
     width: 60px;
     height: 60px;
-    background: rgb(114, 100, 100);
+    background: transparent;
     border: 2px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
